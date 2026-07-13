@@ -50,3 +50,79 @@ main {
     'new  new  roll roll hold hold';
   gap: 20px;
 }
+
+.player {
+  border: 5px solid var(--ink);
+  border-radius: var(--radius);
+  background: #fffaf0;
+  padding: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.player--0 {
+  grid-area: p0;
+}
+
+.player--1 {
+  grid-area: p1;
+}
+
+.player--active {
+  box-shadow: var(--shadow-hard);
+}
+
+.player--0.player--active {
+  border-color: var(--player-0);
+}
+
+.player--1.player--active {
+  border-color: var(--player-1);
+}
+
+.name {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  margin: 0 0 8px;
+}
+
+.player--0 .name {
+  color: var(--player-0);
+}
+
+.player--1 .name {
+  color: var(--player-1);
+}
+
+.score {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3.4rem;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+
+.current {
+  background: var(--ink);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--cream);
+}
+
+.current-label {
+  margin: 0 0 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.75;
+}
+
+.current-score {
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.8rem;
+}
