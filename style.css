@@ -179,3 +179,12 @@ main {
   outline: 3px solid var(--accent-yellow);
   outline-offset: 3px;
 }
+
+.player--winner {
+  border-color: var(--accent-yellow);
+  box-shadow: var(--shadow-hard);
+}
+
+.hidden {
+  display: none;
+}
