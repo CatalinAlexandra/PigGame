@@ -188,3 +188,28 @@ main {
 .hidden {
   display: none;
 }
+
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'p0'
+      'p1'
+      'dice'
+      'new'
+      'roll'
+      'hold';
+    padding: 20px;
+  }
+
+  .score {
+    font-size: 2.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player,
+  .btn {
+    transition: none;
+  }
+}
