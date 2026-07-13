@@ -134,3 +134,48 @@ main {
   margin: 4px auto;
   filter: drop-shadow(0 4px 0 rgba(27, 27, 27, 0.25));
 }
+.btn {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--cream);
+  background: var(--ink);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.55);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.btn--new {
+  grid-area: new;
+  background: var(--accent-blue);
+}
+
+.btn--roll {
+  grid-area: roll;
+  background: var(--accent-orange);
+}
+
+.btn--hold {
+  grid-area: hold;
+  background: var(--accent-teal);
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.55);
+}
+
+.btn:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.55);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--accent-yellow);
+  outline-offset: 3px;
+}
