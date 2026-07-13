@@ -126,3 +126,11 @@ main {
   font-family: 'Luckiest Guy', cursive;
   font-size: 1.8rem;
 }
+
+.dice {
+  grid-area: dice;
+  display: block;
+  width: 90px;
+  margin: 4px auto;
+  filter: drop-shadow(0 4px 0 rgba(27, 27, 27, 0.25));
+}
