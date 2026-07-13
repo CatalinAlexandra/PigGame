@@ -2,6 +2,10 @@
 
 A two-player dice game built with HTML, CSS and JavaScript.
 
+## Live Demo
+
+https://catalinalexandra.github.io/PigGame/
+
 ## Features
 
 - Two-player gameplay
