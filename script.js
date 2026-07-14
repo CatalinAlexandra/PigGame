@@ -73,7 +73,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
 
     //2. Check if player's score is >= 100
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       //Finish the game
       playing = false;
       diceEl.classList.add('hidden');
@@ -97,3 +97,25 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+const btnHowToPlay = document.querySelector('.btn--rules');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnClose = document.querySelector('.close-modal');
+
+//Deschide modal
+btnHowToPlay.addEventListener('click', function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+//Inchide cand apesi pe X
+btnClose.addEventListener('click', function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+//Inchide modal cand apesi pe fundal
+overlay.addEventListener('click', function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});

@@ -23,3 +23,7 @@ https://catalinalexandra.github.io/PigGame/
 ## Note
 
 AI tools (ChatGPT and Claude) were used as coding assistants to refine parts of the CSS styling and visual design. The project implementation and JavaScript logic were completed as part of my learning process.
+
+## Screenshot
+
+![Pig Game Screenshot](assets/screenshot-piggame.png)
