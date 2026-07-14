@@ -181,8 +181,9 @@ main {
 }
 
 .player--winner {
-  border-color: var(--accent-yellow);
-  box-shadow: var(--shadow-hard);
+  background-color: var(--accent-yellow);
+  color: var(--ink);
+  border-color: var(--accent-red);
 }
 
 .hidden {
