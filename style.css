@@ -280,7 +280,9 @@ main {
       'dice'
       'new'
       'roll'
-      'hold';
+      'hold'
+      'rules';
+
     padding: 20px;
   }
 
